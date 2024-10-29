@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0; 
+}
+
+header{
+    background-color: rgb(27, 63, 22);
+}
+
+.section1{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu, a{
+   text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    width: 70%;
+}
+
+a:hover{
+    color: rgb(255,255,153);
+    font-weight: lighter;
+}
+
+.logo{
+    font-size: xx-large;
+    color: rgb(211, 211, 211);
+}
+
+.titulo{
+    font-size: xx-large;
+    color: rgb(27, 63, 22);
+    text-align: center;
+    padding: 50px 10px;   
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: x-large;
+}
+
+.compras{
+    display: flex;
+    text-align: center;
+}
+
+.imagem1{
+    width: 300px;
+    text-align: center;
+    padding-left: 20%;
+    padding-bottom: 10px;
+}
+
+nav, main{
+    background-color:rgb(231, 231, 231);
+    padding: 20px;
+}
+
+
+
+ 
+.insta{
+    display: flex;
+    flex-wrap: row;
+    padding: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconers, .imgemail{
+    width: 20px;
+    height: 30px;
+    padding: 10px;
+}
+
+.contato, .email{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(27, 63, 22);
+    padding: 20px 50px;
+    display: flex;
+    gap:100px;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(211, 211, 211);
+}
