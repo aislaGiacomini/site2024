@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hand</title>
-    <link href="estilo3.css" rel="stylesheet"/>
+    <link href="estiloSuporte.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -12,10 +12,9 @@
     
            <h1 class="logo">Helping Hand</h3>
             <div class="menu">
-                <a href="indes.html">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="sobreNós.html">Sobre nós</a>
                 <a href="compras.html">Comprar</a>
-                <a href="depoimentos.html">Depoimentos</a>
                 <a href="suporte.html">Suporte</a>
             </div>
         </section>
@@ -24,14 +23,26 @@
         <h1>Bem Vindo ao suporte da pulseira Helping Hand</h1>
         <h3 class="subtitulo">Estamos aqui para te ajudar!</h3>
     </nav>
-    <main>
-       <h2>Duvida: Não consigo conectar no app!</h2>
-       <p>É necessário que a pulseira esteja conectada a uma rede wifi. Essa conexão é feita pelo proprio aplicativo.
-        O aplicativo é preciso que esteja conectado a uma rede wifi tambem. Ao ligar a pulseira a primeira vez, o aplicativo pede um cadastro com nome, senha e a rede wifi a ser utilizada. Após seguir as orientações do aplicativo, a pulseira esta pronta para uso!
-       </p>
-       <h2>Duvida: Como configurar o número de emergência?</h2>
-       <p>No aplicativo do celular, haverá uma opção para inserir e salvar o número de telefone que receberá a mensagem de ajuda. Isso geralmente é feito nas configurações do aplicativo.</p>
+    <main class="texto">
+        <form>
+            <label>Digite seu email aqui caso sua duvida não seja respondida</label>
+            <input type="email" id="email" name="email"> 
+            <button type="submit" onclick="enviarEmail()">Salvar Email</button>
+            <p id="msg"></p>
+        </form>
+        
+        <h2>Duvida: Não consigo conectar no app!</h2>
+        <p>É necessário que a pulseira esteja conectada a uma rede wifi. Essa conexão é feita pelo proprio aplicativo.
+            O aplicativo é preciso que esteja conectado a uma rede wifi tambem. Ao ligar a pulseira a primeira vez, o aplicativo pede um cadastro com nome, senha e a rede wifi a ser utilizada. Após seguir as orientações do aplicativo, a pulseira esta pronta para uso!
+        </p>
+        <h2>Duvida: Como configurar o número de emergência?</h2>
+        <p>No aplicativo do celular, haverá uma opção para inserir e salvar o número de telefone que receberá a mensagem de ajuda. Isso geralmente é feito nas configurações do aplicativo.</p>
     
+
+
+
+
+        <script src="suporteJS.js"></script>
     </main>
     <footer>
         <section class="section3">

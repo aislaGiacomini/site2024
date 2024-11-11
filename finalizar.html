@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hand</title>
-    <link href="estilo3.css" rel="stylesheet"/>
+    <link href="estilofinal.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -20,28 +20,25 @@
         </section>
     </header>
     </header>
-    </header>
-    <nav class="titulo"> 
-        <h1>Compre sua pulseira!</h1>
+    <nav> 
+        <h1 id="titulonav">Preencha os dados do cartão!</h1>
     </nav>
-    <main>
-        <div class="compras">
-            <img src="imagens/pulseira.jpg" class="imagem1">
-            <div class="textoCompras">
-                <h2>Pulseira Helping Hand</h2>
-                <H6>COD: 1254 </H6>
-                <ul>
-                    <li>Pulseira de silicone</li>
-                    <li>Envio rapido da notificação</li>
-                    <li>Bateria de longa duração</li>
-                    <li>Resistente a agua</li>
-                </ul>
-                <h3>R$300,98</h3>
-                <h6>A VISTA OU 3X DE 105,34</h6>
-                <a class="botao" href="depoimentos.html">COMPRAR</a>
-            </div>
-        </div>
+    <main class="login">
 
+        <form>
+            <label>Nome do cartão</label>
+            <input type="name" id="txtname" name="name">
+            <label>Numero</label>
+            <input type="number" id="txtnum" name="number">
+            <label>Data de vencimento</label>
+            <input type="date" id="txtdate" name="date">
+            <label>Codigo de segurança</label>
+            <input type="number" id="txtcod" name="number">
+            <button type="button" onclick="cadastrarfinal()">Cadastrar</button>
+        </form>
+
+
+        <script src="finaljs.js"></script>
     </main>
     <footer>
         <section class="section3">

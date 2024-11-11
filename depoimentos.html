@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hand</title>
-    <link href="estilo3.css" rel="stylesheet"/>
+    <link href="estiloDep.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
@@ -12,31 +12,37 @@
     
            <h1 class="logo">Helping Hand</h3>
             <div class="menu">
-                <a href="indes.html">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="sobreNós.html">Sobre nós</a>
                 <a href="compras.html">Comprar</a>
-                <a href="depoimentos.html">Depoimentos</a>
                 <a href="suporte.html">Suporte</a>
             </div>
         </section>
     </header>
+    </header>
     <nav class="titulo"> 
-        <h1>Compre sua pulseira!</h1>
+        Preencha para finalizar a compra!
     </nav>
-    <main>
-        <div class="compras">
-            <img src="imagens/pulseira.jpg" class="imagem1">
-            <div>
-                <h2>Pulseira Helping Hand</h2>
-                <ul>
-                    <li>Pulseira de silicone</li>
-                    <li>Envio rapido da notificação</li>
-                    <li>Bateria de longa duração</li>
-                    <li>Resistente a agua</li>
-                </ul>
-            </div>
-        </div>
+    <main class="login">
 
+        <form>
+            <label>Nome</label>
+            <input type="name" id="txtname" name="name">
+            <label>CPF</label>
+            <input type="number" id="txtcpf" name="number">
+            <label>Telefone</label>
+            <input type="tel" id="txttelefone" name="tel">
+            <label>Cep</label>
+            <input type="number" id="txtcep" name="cep">
+            <label>Email</label>
+            <input type="email" id="txtemail" name="email"> 
+            <label> Senha</label>
+            <input type="password" id="txtsenha" name="password">
+            <button type="button" onclick="cadastrar()">Cadastrar</button>
+        </form>
+
+
+        <script src="depJS.JS"></script>
     </main>
     <footer>
         <section class="section3">
